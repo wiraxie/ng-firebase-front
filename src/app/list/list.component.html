@@ -1,0 +1,31 @@
+<p align="center">
+  list works!
+</p>
+
+<div>
+  <div *ngFor="let List of List">
+    <div class="col-md-4">
+      <ul style="list-style: none" class="floating-box">
+      <li>
+        <label>Name:</label> {{List.prdName}}
+      </li>
+      
+      <li>
+        <label>List Category:</label> {{List.prdCategory}}
+      </li>
+      
+      <li>
+        <label>Supplier:</label> {{List.prdSup}}
+      </li>
+          
+      <li>
+        <label>Image:</label> <img src="{{List.prdImage}}">
+      </li>
+
+      <li>
+        <label>Description:</label> {{List.prdDescription}}
+      </li>
+      </ul>
+    </div>
+  </div>
+ </div>
