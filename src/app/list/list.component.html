@@ -1,32 +1,22 @@
-<p align="center">
-  list works!
-</p>
-
-<div>
-  <div *ngFor="let List of List">
-    <div class="col-md-4">
-      <ul style="list-style: none" class="floating-box">
+<div class="container col-sm-3" *ngFor="let List of List; let i = index">
+  <a href="#List-{{ i }}" class="btn btn-primary" data-toggle="collapse">{{List.prdName}}</a><hr>
+  <div id="List-{{ i }}" class="collapse">
+    <ul style="list-style: none">
       <li>
-        <label>Name:</label> {{List.prdName}}
+        <label>Product Name:</label>{{List.prdName}}
       </li>
-      
       <li>
-        <label>List Category:</label> {{List.prdCategory}}
+        <label>Product Category:</label>{{List.prdCategory}}
       </li>
-      
       <li>
-        <label>Supplier:</label> {{List.prdSup}}
+        <label>Product Supplier:</label>{{List.prdSup}}
       </li>
-          
       <li>
-        <label>Image:</label> <img src="{{List.prdImage}}">
+        <label>Product Image:</label><img src="{{List.prdImage}}">
       </li>
-
       <li>
-        <label>Description:</label> {{List.prdDescription}}
+        <label>Product Description:</label>{{List.prdDescription}}
       </li>
-
-     </ul>
-   </div>
- </div>
+    </ul>
+  </div>
 </div>

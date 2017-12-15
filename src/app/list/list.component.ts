@@ -10,6 +10,7 @@ import { List } from './list';
 export class ListComponent implements OnInit {
 
   List: List[] = [];
+  //public isCollapsed = false;
   
   constructor(private ListService: ListService) { }
 
