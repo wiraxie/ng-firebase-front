@@ -32,3 +32,19 @@ img
 {
     padding-top: 490px;
 }
+
+.zoomin img 
+{
+    height: 200px;
+    width: 200px;
+    -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+            transition: all 1s ease;
+}
+
+.zoomin img:hover 
+{
+    width: 350px;
+    height: 350px;
+  }
