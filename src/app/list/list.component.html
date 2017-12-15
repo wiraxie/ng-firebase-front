@@ -1,4 +1,4 @@
-<div class="container col-sm-3" *ngFor="let List of List; let i = index">
+<div class="container col-sm-3" *ngFor="let List of List | paginate: { itemsPerPage: 4, currentPage: p } ; let i = index">
   <a href="#List-{{ i }}" class="btn btn-primary" data-toggle="collapse">{{List.prdName}}</a><hr>
   <div id="List-{{ i }}" class="collapse">
     <ul style="list-style: none">
@@ -19,4 +19,8 @@
       </li>
     </ul>
   </div>
+</div>
+
+<div align="center" class="ngxPagiantion">
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>

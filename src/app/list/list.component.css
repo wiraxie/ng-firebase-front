@@ -24,4 +24,11 @@ img
 .container
 {
     position: sticky;
+    height: 560px;
+    /* padding-bottom: 10cm; */
+}
+
+.ngxPagiantion
+{
+    padding-top: 560px;
 }

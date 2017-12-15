@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 //import ang. firebase module
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
@@ -37,6 +38,7 @@ import { ListService } from './list/list.service';
     FormlyModule,
     FormlyBootstrapModule,
     ReactiveFormsModule,
+    NgxPaginationModule,
     HttpClientModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
