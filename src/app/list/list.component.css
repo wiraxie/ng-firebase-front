@@ -18,17 +18,17 @@ img
     max-width: 210px;
     height: 210px;
     max-height: 210px;
-    border: 1px dotted black;
+    border: 1px dotted rgb(255, 0, 0);
 }
 
 .container
 {
     position: sticky;
-    height: 560px;
+    height: 490px;
     /* padding-bottom: 10cm; */
 }
 
 .ngxPagiantion
 {
-    padding-top: 560px;
+    padding-top: 490px;
 }

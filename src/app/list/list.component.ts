@@ -15,6 +15,8 @@ export class ListComponent implements OnInit {
   
   constructor(private ListService: ListService) { }
 
+  isCollapsed:boolean = true;
+
   ngOnInit() 
   {
     var x = this.ListService.getData();

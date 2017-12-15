@@ -14,6 +14,7 @@ export class ListService implements OnInit {
 
   constructor(private firebase: AngularFireDatabase) { }
 
+  //fungsi tarik data dari firebase
   getData() 
   {
     this.List = this.firebase.list('Product');

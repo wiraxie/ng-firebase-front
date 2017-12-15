@@ -1,6 +1,6 @@
 <div class="container col-sm-3" *ngFor="let List of List | paginate: { itemsPerPage: 4, currentPage: p } ; let i = index">
-  <a href="#List-{{ i }}" class="btn btn-primary" data-toggle="collapse">{{List.prdName}}</a><hr>
-  <div id="List-{{ i }}" class="collapse">
+  <!-- <a href="#List-{{ i }}" class="btn btn-primary" data-toggle="collapse" title="click to view">{{List.prdName}}</a><hr>
+  <div id="List-{{ i }}" class="collapse"> -->
     <ul style="list-style: none">
       <li>
         <label>Product Name:</label>{{List.prdName}}
@@ -18,7 +18,7 @@
         <label>Product Description:</label>{{List.prdDescription}}
       </li>
     </ul>
-  </div>
+  <!-- </div> -->
 </div>
 
 <div align="center" class="ngxPagiantion">
