@@ -23,15 +23,16 @@
       <div class="modal-body">
         <ul>
           <li><label>Product Name: </label> {{ListService.selectedProduct.prdName}}</li>
-          <li><label>Product Category: </label>{{ListService.selectedProduct.prdCategory}}</li>
-          <li><label>Product Supplier: </label>{{ListService.selectedProduct.prdSup}}</li>
-          <li><label>Product Image: </label><img src="{{ListService.selectedProduct.prdImage}}"/></li>
-          <li><label>Product Description: </label>{{ListService.selectedProduct.prdDescription}}</li>
+          <li><label>Product Category: </label> {{ListService.selectedProduct.prdCategory}}</li>
+          <li><label>Product Supplier: </label> {{ListService.selectedProduct.prdSup}}</li>
+          <li><label>Product Image: </label> <img src="{{ListService.selectedProduct.prdImage}}"/></li>
+          <li><label>Product Description: </label> {{ListService.selectedProduct.prdDescription}}</li>
         </ul>
       </div>
     </div>
   </div>
 </div>
+
 
 <div align="center" class="ngxPagiantion">
   <pagination-controls (pageChange)="p = $event"></pagination-controls>
