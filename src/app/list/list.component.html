@@ -6,16 +6,7 @@
         <label>Product Name:</label> {{List.prdName}}
       </li>
       <li>
-        <label>Product Category:</label> {{List.prdCategory}}
-      </li>
-      <li>
-        <label>Product Supplier:</label> {{List.prdSup}}
-      </li>
-      <li>
         <label>Product Image:</label> <img src="{{List.prdImage}}">
-      </li>
-      <li>
-        <label>Product Description:</label> {{List.prdDescription}}
       </li>
       <button class="btn btn-info" (click)="onItemClick(List)" data-toggle="modal" data-target="#detailModal">Show Detail</button>
     </ul>
@@ -27,15 +18,15 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel" style="text-align:center">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel" style="text-align:center">{{ListService.selectedProduct.prdName}} Details</h4>
       </div>
       <div class="modal-body">
         <ul>
-          <li>{{ListService.selectedProduct.prdName}}</li>
-          <li>{{ListService.selectedProduct.prdCategory}}</li>
-          <li>{{ListService.selectedProduct.prdSup}}</li>
-          <li><img src="{{ListService.selectedProduct.prdImage}}"/></li>
-          <li>{{ListService.selectedProduct.prdDescription}}</li>
+          <li><label>Product Name: </label> {{ListService.selectedProduct.prdName}}</li>
+          <li><label>Product Category: </label>{{ListService.selectedProduct.prdCategory}}</li>
+          <li><label>Product Supplier: </label>{{ListService.selectedProduct.prdSup}}</li>
+          <li><label>Product Image: </label><img src="{{ListService.selectedProduct.prdImage}}"/></li>
+          <li><label>Product Description: </label>{{ListService.selectedProduct.prdDescription}}</li>
         </ul>
       </div>
     </div>
