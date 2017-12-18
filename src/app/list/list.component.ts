@@ -32,4 +32,11 @@ export class ListComponent implements OnInit {
     });
   }
 
+  //private opened;
+  onItemClick(List : List)
+  {
+    this.ListService.selectedProduct = Object.assign({}, List);
+    //this.opened = window.open("");
+    //this.opened.document.write("<html><head><title>test</title></head><body>test<br>{{this.selectedProduct.prdName}}<br>{{this.selectedProduct.prdCategory}}<br>{{this.selectedProduct.prdDescription}}</body></html>");
+  }
 }

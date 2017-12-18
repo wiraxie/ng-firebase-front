@@ -9,8 +9,12 @@ import { AngularFireDatabase, AngularFireList } from 'angularfire2/database'
 export class ListService implements OnInit {
 
   List: AngularFireList<any>;
+  selectedProduct: List = new List();
 
-  ngOnInit(){}
+  ngOnInit()
+  {
+   this.getData();
+  }
 
   constructor(private firebase: AngularFireDatabase) { }
 
