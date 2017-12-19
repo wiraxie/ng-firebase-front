@@ -11,4 +11,6 @@ export class AppComponent {
   showList:boolean = false;
   showAbout:boolean = true;
   showFAQ:boolean = true;
+  showCareer:boolean = true;
+  //showClients:boolean = false;
 }

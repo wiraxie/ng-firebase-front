@@ -3,10 +3,10 @@
   <div id="List-{{ i }}" class="collapse"> -->
     <ul style="list-style: none">
       <li>
-        <label>Product Name:</label> {{List.prdName}}
+        <label>Product Image:</label> <img src="{{List.prdImage}}">
       </li>
       <li>
-        <label>Product Image:</label> <img src="{{List.prdImage}}">
+        {{List.prdName}}
       </li>
       <button class="btn btn-info" (click)="onItemClick(List)" data-toggle="modal" data-target="#detailModal">Show Detail</button>
     </ul>

@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ListService } from './list.service';
 import { List } from './list';
 
+declare var jquery:any;
+declare var $ :any;
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',

@@ -16,6 +16,10 @@ import * as firebase from 'firebase/app';
 //components
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component'
+import { AboutComponent } from './about/about.component';
+import { FaqComponent } from './faq/faq.component';
+import { CareerComponent } from './career/career.component';
+import { ClientsComponent } from './clients/clients.component';
 
 //router
 import { RouterModule } from '@angular/router';
@@ -25,8 +29,7 @@ import { environment } from '../environments/environment';
 
 //services
 import { ListService } from './list/list.service';
-import { AboutComponent } from './about/about.component';
-import { FaqComponent } from './faq/faq.component';
+import { ClientsService } from './clients/clients.service';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,8 @@ import { FaqComponent } from './faq/faq.component';
     ListComponent,
     AboutComponent,
     FaqComponent,
+    CareerComponent,
+    ClientsComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,11 @@ import { FaqComponent } from './faq/faq.component';
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebaseConfiguration, 'app-root'), //environtment. yg di environtment 
   ],
-  providers: [ ListService ],
+  
+  providers: 
+  [ ListService, 
+    ClientsService 
+  ],
   
   bootstrap: 
   [

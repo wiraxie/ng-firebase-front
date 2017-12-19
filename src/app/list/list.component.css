@@ -19,19 +19,19 @@ img
     max-width: 210px;
     height: 210px;
     max-height: 210px;
-    border: 1px dotted rgb(255, 0, 0);
+    border: 1px dotted black;
 }
 
 .container
 {
     position: sticky;
-    height: 490px;
+    height: 280px;
     /* padding-bottom: 10cm; */
 }
 
 .ngxPagiantion
 {
-    padding-top: 490px;
+    padding-top: 350px;
 }
 
 .zoomin img 
