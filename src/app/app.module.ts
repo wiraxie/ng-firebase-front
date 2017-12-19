@@ -25,11 +25,15 @@ import { environment } from '../environments/environment';
 
 //services
 import { ListService } from './list/list.service';
+import { AboutComponent } from './about/about.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
+    AboutComponent,
+    FaqComponent,
   ],
   imports: [
     BrowserModule,
